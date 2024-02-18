@@ -2,7 +2,7 @@ import pandas as pd
 from dash import Dash, dcc, html, Input, Output, callback, dash_table
 import dash_bootstrap_components as dbc
 
-raw_df = pd.read_csv('/Users/michaelanderson/brady/data/ALL_BYCLIENT_DATA_20202024.csv')
+raw_df = pd.read_csv('ALL_BYCLIENT_DATA_20202024.csv')
 df = raw_df[["client", "lobbyist", "start", "stop", "amount"]]
 lobbyists_list = list(df['lobbyist'].unique())
 clients_list = list(df['client'].unique())

@@ -135,6 +135,7 @@ def update_profile_panel(active_cell, lobbyist_input_value, client_dropdown_valu
     lobbyist_name = live_df.iloc[active_row,].lobbyist
     return [generate_profile_panel(lobbyist_name)]
 
+server = app.server
 
 if __name__ == '__main__':
     app.run(debug=False)
